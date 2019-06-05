@@ -10,6 +10,7 @@ jobs:
     - stage: build
       name: "Mvn Build"
       script: mvn package
+      script: ls target
 deploy:
   provider: releases
   api_key: "$API_KEY"
